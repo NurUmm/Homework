@@ -13,12 +13,12 @@ switch (X)
     break;
 
     case 2:
-     Console.Write("\n Задание 2. Максимальное из трех чисел.");
+     Console.WriteLine("\n Задание 2. Максимальное из трех чисел.");
      Console.Write("Введите первое число: ");
      int c = Convert.ToInt32(Console.ReadLine());
      Console.Write("Введите второе число: ");
      int d = Convert.ToInt32(Console.ReadLine());
-     Console.WriteLine("Введите третье число: ");
+     Console.Write("Введите третье число: ");
      int e = Convert.ToInt32(Console.ReadLine());
      
      if (c>d && d>e) Console.WriteLine($"Наибольшее число {c}.");
@@ -33,19 +33,20 @@ switch (X)
      if (q % 2 == 0) Console.WriteLine($"Число {q} является четным.");
      else Console.WriteLine($"Число {q} не является четным.");
     break;
-     case 4:
-     Console.WriteLine("Четверг");
-     break;
-     case 5:
-     Console.WriteLine("Пятница");
-     break;
-     case 6:
-     Console.WriteLine("Суббота");
-     break;
-     case 7:
-     Console.WriteLine("Воскресенье");
-     break;
-     default:
-     Console.WriteLine("Error");
-     break;
+
+    case 4:
+     Console.WriteLine("\n Задание 4. Вывод четных чисел до числа 'X'.");
+     Console.Write("Введите число: ");
+     int f = Convert.ToInt32(Console.ReadLine());
+     for (int i = 1; i <= f; i++)
+        if (i % 2 == 0) {
+            Console.Write(i);
+            Console.Write(" ");
+        }
+    
+        
+     
+     
+
+    break;
 }
