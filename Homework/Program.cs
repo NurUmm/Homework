@@ -1,4 +1,4 @@
-﻿Console.Write("Выберите номер задания от 1 до 4: ");
+﻿Console.Write("\n Выберите номер задания от 1 до 4: ");
 int X = Convert.ToInt32(Console.ReadLine());
 switch (X)
 {
@@ -8,7 +8,7 @@ switch (X)
      int a = Convert.ToInt32(Console.ReadLine());
      Console.Write("Введите второе число: ");
      int b = Convert.ToInt32(Console.ReadLine());
-     if (a > b) Console.WriteLine($"Число {a} наибольшее.");
+     if (a > b) Console.WriteLine($"\n Число {a} наибольшее.");
      else Console.WriteLine($"Число {b} наибольшее.");
     break;
 
@@ -21,17 +21,17 @@ switch (X)
      Console.Write("Введите третье число: ");
      int e = Convert.ToInt32(Console.ReadLine());
      
-     if (c>d && d>e) Console.WriteLine($"Наибольшее число {c}.");
-     else if (c<d && d>e) Console.WriteLine($"Наибольшее число {d}.");
-     else if (c<d && d<e) Console.WriteLine($"Наибольшее число {e}.");
+     if (c>d && d>e) Console.WriteLine($"\n Наибольшее число {c}.");
+     else if (c<d && d>e) Console.WriteLine($"\n Наибольшее число {d}.");
+     else if (c<d && d<e) Console.WriteLine($"\n Наибольшее число {e}.");
     break;
 
     case 3:
      Console.WriteLine("\n Задание 3. Проверка четности чисел.");
      Console.Write("Введите число: ");
      int q = Convert.ToInt32(Console.ReadLine());
-     if (q % 2 == 0) Console.WriteLine($"Число {q} является четным.");
-     else Console.WriteLine($"Число {q} не является четным.");
+     if (q % 2 == 0) Console.WriteLine($"\n Число {q} является четным.");
+     else Console.WriteLine($"\n Число {q} не является четным.");
     break;
 
     case 4:
@@ -43,10 +43,5 @@ switch (X)
             Console.Write(i);
             Console.Write(" ");
         }
-    
-        
-     
-     
-
     break;
 }
