@@ -24,11 +24,15 @@ switch (X)
      if (c>d && d>e) Console.WriteLine($"Наибольшее число {c}.");
      else if (c<d && d>e) Console.WriteLine($"Наибольшее число {d}.");
      else if (c<d && d<e) Console.WriteLine($"Наибольшее число {e}.");
-     break;
+    break;
 
-      case 3:
-     Console.WriteLine("Среда");
-     break;
+    case 3:
+     Console.WriteLine("\n Задание 3. Проверка четности чисел.");
+     Console.Write("Введите число: ");
+     int q = Convert.ToInt32(Console.ReadLine());
+     if (q % 2 == 0) Console.WriteLine($"Число {q} является четным.");
+     else Console.WriteLine($"Число {q} не является четным.");
+    break;
      case 4:
      Console.WriteLine("Четверг");
      break;
