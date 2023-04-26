@@ -7,7 +7,7 @@ switch (X)
      Console.WriteLine("\n Вывод второго значения.");
      Console.Write("Введите 3х значное число: ");
      int num = Convert.ToInt32(Console.ReadLine());
-     if (num < 100 || num > 999) Console.WriteLine("Вы ввели неверное значение.");
+     if (num < 100 || num > 1000) Console.WriteLine("Вы ввели неверное значение.");
      else {
          string sometext = num.ToString();
          Console.WriteLine(sometext[1]);   
