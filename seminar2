@@ -1,0 +1,15 @@
+// Console.WriteLine("Введите 3х значное число: ");
+// int num = Convert.ToInt32(Console.ReadLine());
+// if (num < 100 || num > 999) Console.WriteLine("Вы ввели неверное значение.");
+// string sometext = num.ToString();
+// Console.WriteLine(sometext[1]);
+
+
+Console.WriteLine("Please, enter the number");
+int num = Convert.ToInt32(Console.ReadLine());
+if (num < 99) Console.WriteLine("Error. No third number.");
+else
+{
+    string result = num.ToString();
+    Console.WriteLine(result[2]);
+}
